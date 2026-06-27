@@ -1,0 +1,20 @@
+[
+  {
+    "id": "notif-1782565800016-502",
+    "userId": "u-cust",
+    "title": "Order Status Update",
+    "message": "We are sorry, order #SL-779866-36 had to be cancelled. Please contact helpline.",
+    "timestamp": "2026-06-27T13:10:00.016Z",
+    "read": true,
+    "type": "order_update"
+  },
+  {
+    "id": "notif-1782565779898-245",
+    "userId": "u-cust",
+    "title": "🍛 Order Received!",
+    "message": "Order #SL-779866-36 was successfully placed. Total is ₹125.",
+    "timestamp": "2026-06-27T13:09:39.898Z",
+    "read": false,
+    "type": "order_update"
+  }
+]

@@ -1,0 +1,353 @@
+[
+  {
+    "id": "mysore-bonda",
+    "name": "Mysore Bonda",
+    "desc": "Crisp urad-rice fritters served with coconut chutney.",
+    "category": "starters",
+    "price": 90,
+    "icon": "🧆",
+    "veg": true,
+    "spice": false,
+    "initialStock": 14,
+    "stock": 14,
+    "addons": [
+      {
+        "id": "dip",
+        "label": "Extra Mint Dip",
+        "price": 10
+      }
+    ]
+  },
+  {
+    "id": "chilli-corn",
+    "name": "Chilli Garlic Baby Corn",
+    "desc": "Wok-tossed baby corn in a sharp garlic-chilli glaze.",
+    "category": "starters",
+    "price": 160,
+    "icon": "🌽",
+    "veg": true,
+    "spice": true,
+    "initialStock": 9,
+    "stock": 9,
+    "addons": [
+      {
+        "id": "sauce",
+        "label": "Extra Chilli-Garlic Sauce",
+        "price": 15
+      }
+    ]
+  },
+  {
+    "id": "chicken-65",
+    "name": "Chicken 65",
+    "desc": "Madurai-style deep fried chicken with robust curry leaf tempering.",
+    "category": "starters",
+    "price": 220,
+    "icon": "🍗",
+    "veg": false,
+    "spice": true,
+    "initialStock": 6,
+    "stock": 6,
+    "addons": [
+      {
+        "id": "curryleaf",
+        "label": "Extra Curry Leaf Tempering",
+        "price": 10
+      }
+    ]
+  },
+  {
+    "id": "pepper-prawns",
+    "name": "Pepper Prawns",
+    "desc": "Pan-seared prawns in a spicy cracked black pepper masala.",
+    "category": "starters",
+    "price": 280,
+    "icon": "🦐",
+    "veg": false,
+    "spice": true,
+    "initialStock": 3,
+    "stock": 3,
+    "addons": [
+      {
+        "id": "pepper",
+        "label": "Extra Pepper Crust",
+        "price": 20
+      }
+    ]
+  },
+  {
+    "id": "masala-dosa",
+    "name": "Masala Dosa",
+    "desc": "Crisp rice crepe stuffed with spiced potato filling, served with chutneys.",
+    "category": "southindian",
+    "price": 110,
+    "icon": "🫓",
+    "veg": true,
+    "spice": false,
+    "initialStock": 20,
+    "stock": 20,
+    "addons": [
+      {
+        "id": "cheese",
+        "label": "Add Cheese",
+        "price": 25
+      },
+      {
+        "id": "sambar",
+        "label": "Extra Sambar",
+        "price": 15
+      }
+    ]
+  },
+  {
+    "id": "ghee-roast-dosa",
+    "name": "Ghee Roast Dosa",
+    "desc": "Golden butter-crisp dosa loaded with premium pure ghee.",
+    "category": "southindian",
+    "price": 140,
+    "icon": "🫓",
+    "veg": true,
+    "spice": false,
+    "initialStock": 5,
+    "stock": 5,
+    "addons": [
+      {
+        "id": "chutney",
+        "label": "Extra Chutney Set",
+        "price": 15
+      }
+    ]
+  },
+  {
+    "id": "idli-sambar",
+    "name": "Idli Sambar (4 pc)",
+    "desc": "Soft steamed rice cakes soaked in flavorful hot lentil sambar.",
+    "category": "southindian",
+    "price": 80,
+    "icon": "🍙",
+    "veg": true,
+    "spice": false,
+    "initialStock": 25,
+    "stock": 25,
+    "addons": [
+      {
+        "id": "podi",
+        "label": "Ghee Podi Dusting",
+        "price": 20
+      }
+    ]
+  },
+  {
+    "id": "chettinad-chicken",
+    "name": "Chettinad Chicken Curry",
+    "desc": "Juicy chicken slow-cooked in roasted hand-ground Chettinad spices.",
+    "category": "southindian",
+    "price": 260,
+    "icon": "🍛",
+    "veg": false,
+    "spice": true,
+    "initialStock": 8,
+    "stock": 8,
+    "sizes": [
+      {
+        "id": "half",
+        "label": "Half Portion",
+        "mult": 0.6
+      },
+      {
+        "id": "full",
+        "label": "Full Portion",
+        "mult": 1
+      }
+    ],
+    "addons": [
+      {
+        "id": "parotta",
+        "label": "Add 2 Parottas",
+        "price": 40
+      }
+    ]
+  },
+  {
+    "id": "meen-kuzhambu",
+    "name": "Meen Kuzhambu",
+    "desc": "Tangy tamarind-infused fish curry, a legendary coastal classic.",
+    "category": "southindian",
+    "price": 240,
+    "icon": "🐟",
+    "veg": false,
+    "spice": true,
+    "initialStock": 2,
+    "stock": 2,
+    "sizes": [
+      {
+        "id": "half",
+        "label": "Half Portion",
+        "mult": 0.6
+      },
+      {
+        "id": "full",
+        "label": "Full Portion",
+        "mult": 1
+      }
+    ]
+  },
+  {
+    "id": "paneer-butter-masala",
+    "name": "Paneer Butter Masala",
+    "desc": "Fresh paneer cubes in a silky rich tomato-cashew gravy.",
+    "category": "mains",
+    "price": 220,
+    "icon": "🍛",
+    "veg": true,
+    "spice": false,
+    "initialStock": 12,
+    "stock": 12,
+    "sizes": [
+      {
+        "id": "half",
+        "label": "Half Portion",
+        "mult": 0.6
+      },
+      {
+        "id": "full",
+        "label": "Full Portion",
+        "mult": 1
+      }
+    ],
+    "addons": [
+      {
+        "id": "butter",
+        "label": "Extra Butter Spoon",
+        "price": 15
+      }
+    ]
+  },
+  {
+    "id": "dal-makhani",
+    "name": "Dal Makhani",
+    "desc": "Black lentils slow-simmered overnight, enriched with butter and cream.",
+    "category": "mains",
+    "price": 190,
+    "icon": "🍲",
+    "veg": true,
+    "spice": false,
+    "initialStock": 18,
+    "stock": 18,
+    "addons": [
+      {
+        "id": "naan",
+        "label": "Add Butter Naan",
+        "price": 35
+      }
+    ]
+  },
+  {
+    "id": "butter-chicken",
+    "name": "Butter Chicken",
+    "desc": "Tandoori chicken shreds slow-simmered in a rich buttery gravy.",
+    "category": "mains",
+    "price": 260,
+    "icon": "🍛",
+    "veg": false,
+    "spice": false,
+    "initialStock": 7,
+    "stock": 7,
+    "sizes": [
+      {
+        "id": "half",
+        "label": "Half Portion",
+        "mult": 0.6
+      },
+      {
+        "id": "full",
+        "label": "Full Portion",
+        "mult": 1
+      }
+    ]
+  },
+  {
+    "id": "mutton-rogan-josh",
+    "name": "Mutton Rogan Josh",
+    "desc": "Tender mutton chunks slow-cooked with aromatic Kashmiri spices.",
+    "category": "mains",
+    "price": 320,
+    "icon": "🍖",
+    "veg": false,
+    "spice": true,
+    "initialStock": 4,
+    "stock": 4
+  },
+  {
+    "id": "filter-coffee",
+    "name": "Filter Coffee",
+    "desc": "Strong traditional South Indian filter brew frothed with milk.",
+    "category": "beverages",
+    "price": 40,
+    "icon": "☕",
+    "veg": true,
+    "spice": false,
+    "initialStock": 50,
+    "stock": 50,
+    "sizes": [
+      {
+        "id": "reg",
+        "label": "Regular",
+        "mult": 1
+      },
+      {
+        "id": "large",
+        "label": "Large",
+        "mult": 1.4
+      }
+    ]
+  },
+  {
+    "id": "masala-chai",
+    "name": "Masala Chai",
+    "desc": "Milk tea brewed with ginger, cloves, and freshly crushed cardamom.",
+    "category": "beverages",
+    "price": 30,
+    "icon": "☕",
+    "veg": true,
+    "spice": false,
+    "initialStock": 50,
+    "stock": 50
+  },
+  {
+    "id": "coca-cola",
+    "name": "Coca-Cola (Chilled)",
+    "desc": "Served ice-cold, the perfect palette cleanser.",
+    "category": "beverages",
+    "price": 40,
+    "icon": "🥤",
+    "veg": true,
+    "spice": false,
+    "initialStock": 30,
+    "stock": 30
+  },
+  {
+    "id": "mysore-pak",
+    "name": "Mysore Pak",
+    "desc": "Rich ghee-sweet, made fresh using royal heritage gram flour.",
+    "category": "desserts",
+    "price": 70,
+    "icon": "🍯",
+    "veg": true,
+    "spice": false,
+    "initialStock": 10,
+    "stock": 10
+  },
+  {
+    "id": "filter-coffee-kulfi",
+    "name": "Filter Coffee Kulfi",
+    "desc": "Traditional kulfi frozen with filter coffee flavor and pistachio topping.",
+    "category": "desserts",
+    "price": 90,
+    "icon": "🍦",
+    "veg": true,
+    "spice": false,
+    "initialStock": 6,
+    "stock": 5
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "Spice & Leaf - Food Delivery",
+  "description": "A high-fidelity full-stack food ordering platform with role-based logins (customer, staff, CEO), secure authentication, real-time order tracking, digital wallet & card payment integrations, live stock level updates, and automated push notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

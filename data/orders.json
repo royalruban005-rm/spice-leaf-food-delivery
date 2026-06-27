@@ -1,0 +1,42 @@
+[
+  {
+    "id": "SL-779866-36",
+    "userId": "u-cust",
+    "customerName": "Ramesh Kannan",
+    "customerPhone": "+91 90000 11111",
+    "customerAddress": "42, Kalavasal Main Rd, Madurai",
+    "mode": "delivery",
+    "items": [
+      {
+        "cartId": "cart-1782565651106-41",
+        "foodId": "filter-coffee-kulfi",
+        "name": "Filter Coffee Kulfi",
+        "icon": "🍦",
+        "price": 90,
+        "qty": 1,
+        "addonsSelected": [],
+        "notes": "extra coffee powder"
+      }
+    ],
+    "subtotal": 90,
+    "tax": 4.5,
+    "deliveryFee": 30,
+    "total": 124.5,
+    "status": "cancelled",
+    "paymentMethod": "upi",
+    "paymentStatus": "paid",
+    "timestamp": "2026-06-27T13:09:39.866Z",
+    "timeline": [
+      {
+        "status": "placed",
+        "timestamp": "2026-06-27T13:09:39.866Z",
+        "description": "Order placed. Kitchen team checking stock levels & prepping ingredients."
+      },
+      {
+        "status": "cancelled",
+        "timestamp": "2026-06-27T13:10:00.015Z",
+        "description": "Order cancelled by kitchen staff. Refund initiated if prepaid."
+      }
+    ]
+  }
+]
