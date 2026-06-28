@@ -11,11 +11,12 @@ import { FoodItem, Order, OrderStatus, User, UserRole, Notification, LiveStats }
 import dotenv from "dotenv";
 dotenv.config();
 
-const app = express();
-const server = http.createServer(app);
+export const app = express();
+export const server = http.createServer(app);
 const DEFAULT_PORT = 3000;
 const BASE_PORT = parseInt(process.env.PORT || '', 10) || DEFAULT_PORT;
 const MAX_PORT_ATTEMPTS = 5;
+const isVercelRuntime = Boolean(process.env.VERCEL);
 
 app.use(express.json());
 
@@ -641,8 +642,8 @@ app.post("/api/payment/pay", (req, res) => {
 });
 
 // --- PLATFORM DEV SERVER AND INDEX ORCHESTRATION ---
-async function startServer() {
-  if (process.env.NODE_ENV !== "production") {
+async function configureApp() {
+  if (process.env.NODE_ENV !== "production" && !isVercelRuntime) {
     const vite = await createViteServer({
       server: { middlewareMode: true },
       appType: "spa",
@@ -650,10 +651,23 @@ async function startServer() {
     app.use(vite.middlewares);
   } else {
     const distPath = path.join(process.cwd(), "dist");
-    app.use(express.static(distPath));
-    app.get("*", (req, res) => {
-      res.sendFile(path.join(distPath, "index.html"));
-    });
+    if (fs.existsSync(distPath)) {
+      app.use(express.static(distPath));
+      app.get("*", (req, res, next) => {
+        if (req.path.startsWith("/api/")) {
+          return next();
+        }
+        res.sendFile(path.join(distPath, "index.html"));
+      });
+    }
+  }
+}
+
+async function startServer() {
+  await configureApp();
+
+  if (isVercelRuntime) {
+    return;
   }
 
   // Bind WebSocket upgrading onto the same server instance on port 3000
@@ -690,4 +704,5 @@ async function startServer() {
 
 }
 
-startServer();
+void startServer();
+export default app;
